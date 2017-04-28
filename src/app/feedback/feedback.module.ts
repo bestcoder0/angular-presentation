@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { FeedbackWidgetComponent } from './feedback-widget/feedback-widget.component';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBDg_JEXDrn7iuvGR-xrcU1bmjWc-uxmgA",
-  authDomain: "ng2-codelab.firebaseapp.com",
-  databaseURL: "https://ng2-codelab.firebaseio.com",
-  storageBucket: "ng2-codelab.appspot.com"
+  apiKey: "AIzaSyCeP6gN-uuk6Ltzs5d0_pRqcw0nzbK9aJI",
+  authDomain: "ng2codelab.firebaseapp.com",
+  databaseURL: "https://ng2codelab.firebaseio.com",
+  storageBucket: "ng2codelab.appspot.com"
 };
 
 export const af = AngularFireModule.initializeApp(firebaseConfig);
@@ -25,6 +25,6 @@ export const af = AngularFireModule.initializeApp(firebaseConfig);
   declarations: [FeedbackWidgetComponent],
   exports:[FeedbackWidgetComponent]
 })
-export class FeedbackModule { 
-  
+export class FeedbackModule {
+
 }
