@@ -1,3 +1,10 @@
-<p>
-  login-widget works!
-</p>
+<div class="modal-dialog">
+  <div id="main">
+      <div *ngIf="isLoggedIn===true" >
+          <button class="" (click)="login()">Log oUT</button>
+      </div>
+      <div *ngIf="isLoggedIn===false" >
+        <button class="" (click)="login()">Login</button>
+      </div>
+    </div>
+</div>

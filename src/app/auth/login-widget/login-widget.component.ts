@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthService} from "../../providers/authservice";
 
 @Component({
   selector: 'app-login-widget',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-widget.component.css']
 })
 export class LoginWidgetComponent implements OnInit {
+  public isLoggedIn: boolean;
 
-  constructor() { }
+  constructor(public authSvc: AuthService, private router: Router) { }
 
   ngOnInit() {
+  }
+
+  login() {
+    this.authSvc.loginWithGoogle().then((data) => {
+    })
   }
 
 }
